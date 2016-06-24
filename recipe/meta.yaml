@@ -6,7 +6,7 @@ package:
 source:
   fn: matplotlib-venn-{{ version }}.zip
   url: https://pypi.io/packages/source/m/matplotlib-venn/matplotlib-venn-{{ version }}.zip
-  md5: 55264984346687371e446b1f8d27a420
+  sha256: 707d66f923f4c75370c78193b80cc2bd7e417ab149d0373d64d677cc4813f391
 
 build:
   number: 0
