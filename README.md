@@ -3,7 +3,7 @@ About matplotlib-venn
 
 Home: https://github.com/konstantint/matplotlib-venn
 
-Package license: MIT License
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
