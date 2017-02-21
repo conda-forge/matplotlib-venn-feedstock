@@ -1,5 +1,5 @@
 {%set name = "matplotlib-venn" %}
-{%set version = "0.11.4" %}
+{%set version = "0.11.5" %}
 {%set compress_type = "zip" %}
 {%set hash_type = "sha256" %}
 {%set hash_val = "be017a6821bce410db3314099649f1a0fcf4c0fbf7be0c1190b102187988838f" %}
