@@ -14,14 +14,15 @@ Summary: Functions for plotting area-proportional two- and three-way Venn diagra
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/matplotlib-venn-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/matplotlib-venn-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/matplotlib-venn-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/matplotlib-venn-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/matplotlib-venn-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/matplotlib-venn-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/matplotlib-venn-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/matplotlib-venn-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/matplotlib-venn/badges/version.svg)](https://anaconda.org/conda-forge/matplotlib-venn)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/matplotlib-venn/badges/downloads.svg)](https://anaconda.org/conda-forge/matplotlib-venn)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-matplotlib--venn-green.svg)](https://anaconda.org/conda-forge/matplotlib-venn) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/matplotlib-venn.svg)](https://anaconda.org/conda-forge/matplotlib-venn) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/matplotlib-venn.svg)](https://anaconda.org/conda-forge/matplotlib-venn) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/matplotlib-venn.svg)](https://anaconda.org/conda-forge/matplotlib-venn) |
 
 Installing matplotlib-venn
 ==========================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
