@@ -1,27 +1,26 @@
-{%set name = "matplotlib-venn" %}
-{%set version = "0.11.5" %}
-{%set compress_type = "zip" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "be017a6821bce410db3314099649f1a0fcf4c0fbf7be0c1190b102187988838f" %}
-{%set build_num = "0" %}
+{% set name = "matplotlib-venn" %}
+{% set version = "0.11.5" %}
+{% set bundle = "zip" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "be017a6821bce410db3314099649f1a0fcf4c0fbf7be0c1190b102187988838f" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
