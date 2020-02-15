@@ -1,30 +1,25 @@
-{% set name = "matplotlib-venn" %}
 {% set version = "0.11.5" %}
-{% set bundle = "zip" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "be017a6821bce410db3314099649f1a0fcf4c0fbf7be0c1190b102187988838f" %}
 
 package:
-  name: {{ name|lower }}
+  name: matplotlib-venn
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.org/packages/source/m/matplotlib-venn/matplotlib-venn-{{ version }}.zip
+  sha256: be017a6821bce410db3314099649f1a0fcf4c0fbf7be0c1190b102187988838f
 
 build:
-  number: 1
+  number: 2
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
     - pip
-
   run:
     - python
-    - matplotlib
+    - matplotlib-base
     - numpy
     - scipy
 
@@ -35,6 +30,7 @@ test:
 about:
   home: https://github.com/konstantint/matplotlib-venn
   license: MIT
+  license_file: LICENSE
   license_family: MIT
   summary: 'Functions for plotting area-proportional two- and three-way Venn diagrams in matplotlib.'
   dev_url: https://github.com/konstantint/matplotlib-venn
