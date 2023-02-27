@@ -1,4 +1,4 @@
-{% set version = "0.11.7" %}
+{% set version = "0.11.8" %}
 
 package:
   name: matplotlib-venn
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/matplotlib-venn/matplotlib-venn-{{ version }}.tar.gz
-  sha256: 8d8b3505594313099328c9f177133dd800a28f3dd68e6800a78250c0cccce317
+  sha256: 1c3520c660b0393748f816448c27b7fc510a33ba39cd50117f0d2a1ddddfdaa4
 
 build:
   number: 0
