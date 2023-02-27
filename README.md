@@ -1,11 +1,11 @@
-About matplotlib-venn
-=====================
+About matplotlib-venn-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/matplotlib-venn-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/konstantint/matplotlib-venn
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/matplotlib-venn-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions for plotting area-proportional two- and three-way Venn diagrams in matplotlib.
 
