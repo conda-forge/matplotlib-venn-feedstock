@@ -1,5 +1,5 @@
 {% set name = "matplotlib-venn" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/matplotlib-venn-{{ version }}.tar.gz
-  sha256: d885bc015f5091a4b8a8138ff20a7ed166c33b5c36dbc0489f95a5cbc76a2ae5
+  sha256: 6f2b07a03e9bb5a62de2f32f965216739e175176f9d654dd19e7af2c22ec36e3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
